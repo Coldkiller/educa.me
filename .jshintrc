@@ -1,0 +1,42 @@
+{
+	"node": true, // habilitar variables globales para el entorno de node.
+	"browser": true, // buscador estandar e.g. `window`, `document`.
+	"esnext": true, 
+	"bitwise": false, // Prohibe  operadores (&, |, ^, etc.).
+	"camelcase": false, // Permitir solo el caso para  `var` y `object indexes`.
+	"curly": false, 
+	"eqeqeq": true, // respdonder a tripletes e. `===`.
+	"immed": true, 
+	"latedef": true,
+	"newcap": true, 
+	"noarg": true,
+	"quotmark": "single", 
+	"regexp": true, 
+	"undef": true, 
+	"unused": false, 
+	"strict": true, 
+	"trailing": true, 
+	"smarttabs": false, 
+	"globals": { 
+		"jasmine": true,
+		"angular": true,
+		"ApplicationConfiguration": true
+	},
+	"predef": [ 
+		"define",
+		"require",
+		"exports",
+		"module",
+		"describe",
+		"before",
+		"beforeEach",
+		"after",
+		"afterEach",
+		"it",
+		"inject",
+		"expect"
+	],
+	"indent": 4, 
+	"devel": true, 
+	"noempty": true 
+}

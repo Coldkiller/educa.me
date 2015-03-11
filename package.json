@@ -1,7 +1,7 @@
 {
 	"name": "educa.me",
 	"descritption": "Un aplicacion web educativa",
-	"version": "0.1.0",
+	"version": "0.1.2",
 	"private": false,
 	"author": "Marcos Clemente Bonilla",
 	"repository": {
