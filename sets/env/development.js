@@ -20,13 +20,13 @@ module.exports = {
 	},
 	//configuramos la plataforma para usar la s estrategias de passport
 	facebook: {
-		clientID: process.env.FACEBOOK_ID || 'APP_ID',
-		clientSecret: process.env.FACEBOOK_SECRET || 'APP_SECRET',
+		clientID: process.env.FACEBOOK_ID || '385511008285689',
+		clientSecret: process.env.FACEBOOK_SECRET || '57818eb63e4d31470ff368690ee1c6c3',
 		callbacjURL: '/auth/facebook/callback'
 	},
 	twitter: {
-		clientID: process.env.TWITTER_KEY || 'CONSUMER_KEY',
-		clientSecret: process.env.TWITTER_SECRET || 'APP_SECRET',
+		clientID: process.env.TWITTER_KEY || 'hWoFZCxkWVzCzmM01QJ1SQ',
+		clientSecret: process.env.TWITTER_SECRET || 'YkX7qlDcgjkc22RTC6yMOZzjL6kRGIxmffQc7fa0Jk',
 		callbackURL: '/auth/twitter/callback'
 	},
 	mailer: {
