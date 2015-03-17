@@ -11,7 +11,7 @@ module.exports = function(webapp) {
 	//de entrada y salida
 	webapp.route('/usuarios/password').post(usuarios.changePassword);
 	webapp.route('/auth/forgot').post(usuarios.forgot);
-	
+	 
 	//creamos nuestro token en caso de quere restablecer contraseña
 	webapp.route('/auth/reset/:token').get(ususarios.validateResetToken);
 	webapp.route('/auth/reset/:token').post(usuarios.reset);

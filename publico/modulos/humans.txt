@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <Marcos Clemente> -- <developer> -- <@Un_pincheduende>
+
+# THANKS
+
+    <Jorge Luis Camarillo>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr

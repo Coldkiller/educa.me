@@ -1,0 +1,20 @@
+<section class="row" data-ng-controller="SetsCtrl">
+	<h3 class="cold-md-10 text-center" data-ng-show="hasConectaCunatas()">Estas son tus cuentas conectadas: </h3>
+	<div class="cold-md-10 text-center">
+	<div data-ng-repeat="(providerName, providerData) in user.adittionalProvidersData" class="remove-account-container">
+	<img ng-src="/modulos/usuarios/image/botones/{{providerName}}.png">
+	<a data-ng-click="removeUserSocialAccount(providerName)">
+		<i class="glypicon glyphicon-trash"></i>
+	</a>
+	</div></div>
+	<h2 class="cold-md-10 text-center">tambien puedes conectar con otras cuentas: </h2>
+	<div class="cold-md-10 text-center" >
+		<a href="/auth/facebook" data-ng-hide="isConnectedSocialAccount('facebook')" class="undecorated-link">
+			<img src="/modulos/usuarios/image/botones/facebook.png" >
+		</a>
+	<a href="/auth/twitter" data-ng-hide="isConnectedSocialAccount('twitter')" class="undecorated-link">
+		<img src="/modulos/usuarios/image/botones/twitter.png">
+	</a>
+
+	</div>
+</section>

@@ -9,7 +9,7 @@ var _ = require('lodash'),
 
 //primero por el registro de usuarios
 
-exports.signup = function(req, res) {
+exports.registrar = function(req, res) {
 	delete.req.body.roles;
 	//por seguridad eliminamos nuestro rol dentro de este objeto
 
@@ -44,7 +44,7 @@ exports.signup = function(req, res) {
 };
 
 //creamos nuestro controlador para entrar o iniciar sesion 
-exports.signin = function(req, res, next) {
+exports.entrar = function(req, res, next) {
 	passport.authenticate('local', function(err, usuario, info) {
 		if (err || !usuario) {
 			res.status(400).send(info);
@@ -64,7 +64,7 @@ exports.signin = function(req, res, next) {
 
 
 //salir del sitio
-exports.signout = function(req, res) {
+exports.salir = function(req, res) {
 	req.logout();
 	res.redirect('/');
 };
